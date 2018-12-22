@@ -1,14 +1,10 @@
-### Testing task A code:
+### Testing task 2 code:
 
-# Carry out Static testing on the code below.
+# Carry out dynamic testing on the code below.
 # Correct the errors below that you spotted in task 1.
 
 class CardGame
 
-  def initialize(suit, value)
-    @suit = suit
-    @value = value;
-  end
 
   def checkforAce(card)
     if card.value = 1
@@ -20,9 +16,9 @@ class CardGame
 
   dif highest_card(card1 card2)
   if card1.value > card2.value
-    return card.name
+    return card
   else
-    card2
+    return card2
   end
 end
 end
