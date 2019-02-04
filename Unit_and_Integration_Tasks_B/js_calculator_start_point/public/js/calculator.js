@@ -61,7 +61,11 @@ Calculator.prototype = {
 
     // if the 'equals' button was clicked, clear the previous operator, otherwise
     // record what the previous operator was
+
     if (operator == '=') {
+      if (this.runningTotal === Infinity) {
+        this.runningTotal = 'Not a number';
+      }
       this.previousOperator = null;
     } else {
       this.previousOperator = operator;
